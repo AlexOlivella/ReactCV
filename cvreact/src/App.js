@@ -1,33 +1,33 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
-  
-} from "react-router-dom";
-import Home from './components/Home'
-import About from './components/About'
-import Users from './components/Users'
+} from 'react-router-dom'
+
+//components
+import Header from './components/headerComponent/header'
+import Footer from './components/footerComponent/footer'
+import Homepage from './components/pages/homePage'
+import Products from './components/pages/products'
+
+//includes
+import './Assets/css/default.min.css'
 
 
-export default function App() {
-  return (
-    <Router>
-      {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-      <Switch>
-        <Route path="/">
-          <Home />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/users">
-          <Users />
-        </Route>
-      </Switch>
-    </Router>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <Header />
+          <Route exact path="/" component={Homepage} />
+          <Route exact path="/Products" component={Products} />
+          <Footer />
+        </div>
+      </Router>
+
+    );
+  }
 }
 
+export default App;
