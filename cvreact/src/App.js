@@ -9,12 +9,13 @@ import Header from './components/headerComponent/header'
 import Footer from './components/footerComponent/footer'
 import Homepage from './components/pages/homePage'
 import Products from './components/pages/products'
+import Contact from './components/pages/contact';
 
 //includes
 import './Assets/css/default.min.css'
 
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <Router>
@@ -22,6 +23,8 @@ class App extends Component {
           <Header />
           <Route exact path="/" component={Homepage} />
           <Route exact path="/Products" component={Products} />
+          <Route exact path="/Contact" component={Contact} />
+
           <Footer />
         </div>
       </Router>
@@ -29,5 +32,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;

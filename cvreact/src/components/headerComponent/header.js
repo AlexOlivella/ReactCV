@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import {
     Link
 } from 'react-router-dom'
+import Sidebar from '../sidebarComponent/sidebar';
 
 class Header extends Component {
     render() {
         return (
             <header>
-                <div className="logo">
-                    LOGO
-          </div>
+                <Sidebar></Sidebar>
                 <nav>
                     <ul>
                         <li className="first">
