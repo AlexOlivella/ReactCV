@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-export default class Homepage extends Component {
+export default class WorkExperience extends Component {
     render() {
         return (
             <div className="container-fluid">
 
                 <h1>
-                    Products
+                    Work experience
                 </h1>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.

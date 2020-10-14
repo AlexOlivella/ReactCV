@@ -2,20 +2,18 @@ import React, { Component } from 'react';
 import {
     Link
 } from 'react-router-dom'
-import Sidebar from '../sidebarComponent/sidebar';
 
 class Header extends Component {
     render() {
         return (
             <header>
-                <Sidebar></Sidebar>
                 <nav>
                     <ul>
                         <li className="first">
-                            <Link to="/">Home</Link>
+                            <Link to="/">About me</Link>
                         </li>
                         <li>
-                            <Link to="/Products">Products</Link>
+                            <Link to="/WorkExperience">Work experience</Link>
 
                         </li>
                         <li className="last">
