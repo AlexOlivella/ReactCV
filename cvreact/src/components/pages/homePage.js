@@ -1,22 +1,13 @@
-import React, { Component } from 'react';
-import profilePicSmall from '../../Assets/img/FotoCVSmall.png'
-import profilePic from '../../Assets/img/FotoCV.png'
-import * as commonFunctions from '../../common/functions/functions'
+import React from 'react';
+import '../../App.css'
+import HeroSection from '../heroSection/HeroSection'
 
 
-export default class Homepage extends Component {
+export default function Homepage() {
+    return (
+        <>
+            <HeroSection />
+        </>
+    );
 
-    componentDidMount(){
-        commonFunctions.considerDimensions(window.innerWidth, window.innerHeight)
-    }
-
-    render() {
-        return (
-            <div className="">
-
-                <img src={profilePic} className="profilePic" alt="profilePic"></img>
-
-            </div>
-        );
-    }
 }
