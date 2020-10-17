@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import {Button} from '../buttonComponent/Button.js'
-import './header.css'
+import './Header.css'
 
 
 export default function Header() {
@@ -35,11 +35,11 @@ export default function Header() {
 
                         </li>
                         <li className="nav-item">
-                            <Link to="/WorkExperience" className="nav-links" onClick={closeMobileMenu}>Work experience</Link>
+                            <Link to="/workExperience" className="nav-links" onClick={closeMobileMenu}>Work experience</Link>
 
                         </li>
                         <li className="nav-item">
-                            <Link to="/Contact" className="nav-links-mobile" onClick={closeMobileMenu}>Contact</Link>
+                            <Link to="/contact" className="nav-links-mobile" onClick={closeMobileMenu}>Contact</Link>
 
                         </li>
                     </ul>
