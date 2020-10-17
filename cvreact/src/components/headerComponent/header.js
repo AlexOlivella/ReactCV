@@ -43,9 +43,10 @@ export default function Header() {
 
                         </li>
                     </ul>
-
                     {button && <Button buttonStyle="btn--outline">Contact</Button>}
+
                 </div>
+
             </nav>
         </>
     );
