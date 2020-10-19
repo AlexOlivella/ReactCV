@@ -6,9 +6,10 @@
 }
 
 .home,
-.services,
+.aboutMe,
 .workExperience,
-.contact {
+.contact,
+.reviews {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -17,10 +18,10 @@
 }
 
 
-.services {
+.aboutMe {
   background-image: url('/images/img-2.jpg');
   background-position: center;
-  background-size: cover;
+  background-size: fill;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
@@ -37,6 +38,15 @@
 
 .contact {
   background-image: url('/images/img-8.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.reviews {
+  background-image: url('/images/img-7.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

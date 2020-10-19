@@ -9,8 +9,10 @@ import {
 import Header from './components/headerComponent/Header'
 //import Footer from './components/footerComponent/footer'
 import Homepage from './components/pages/HomePage'
+import AboutMe from './components/pages/AboutMe';
 import WorkExperience from './components/pages/WorkExperience'
 import Contact from './components/pages/Contact';
+import Reviews from './components/pages/Reviews';
 
 //includes
 import './App.css'
@@ -29,8 +31,11 @@ export default class App extends Component {
           <Header />
           <Switch>
             <Route exact path="/" component={Homepage} />
+            <Route exact path="/aboutMe" component={AboutMe} />
             <Route exact path="/workExperience" component={WorkExperience} />
             <Route exact path="/contact" component={Contact} />
+            <Route exact path="/reviews" component={Reviews} />
+
           </Switch>
         </Router>
       </>

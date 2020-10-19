@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
-import {Button} from '../buttonComponent/Button.js'
+import { Button } from '../buttonComponent/Button.js'
 import './Header.css'
 
 
@@ -12,7 +12,7 @@ export default function Header() {
     const closeMobileMenu = () => setClick(false);
 
     const showButton = () => {
-        if(window.innerWidth <= 960){
+        if (window.innerWidth <= 960) {
             setButton(false)
         }
         else {
@@ -26,12 +26,17 @@ export default function Header() {
         <>
             <nav className="navbar">
                 <div className="navbar-container">
+
                     <div className="menu-icon" onClick={handleClick}>
                         <i className={click ? '	fa fa-times' : 'fa fa-bars'}></i>
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className="nav-item">
-                            <Link to="/" className="nav-links" onClick={closeMobileMenu}>About me</Link>
+                            <Link to="/" className="nav-links" onClick={closeMobileMenu}>Home</Link>
+
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/aboutMe" className="nav-links" onClick={closeMobileMenu}>About me</Link>
 
                         </li>
                         <li className="nav-item">
@@ -43,7 +48,7 @@ export default function Header() {
 
                         </li>
                     </ul>
-                    {button && <Button buttonStyle="btn--outline">Contact</Button>}
+                    {button && <Button linkTo="/contact" buttonStyle="btn--outline">Contact</Button>}
 
                 </div>
 
