@@ -9,9 +9,11 @@ function Cards() {
                 <div className="cards__wrapper">
                     <ul className="cards__items">
                         <CardItem
-                            src={"/images/img-me-small.png"}
+                            src={"/images/img-about-me.jpg"}
                             text="Explore a bit more about me"
                             label="Personal"
+                            boolLabel={true}
+                            externalLink={{}}
                             path="/aboutMe"
                         />
                         <CardItem
@@ -19,6 +21,8 @@ function Cards() {
                             text="Check out my work experience"
                             label="Work"
                             path="/workExperience"
+                            boolLabel={true}
+                            externalLink={{}}
                         />
                     </ul>
                     <ul className="cards__items">
@@ -27,13 +31,16 @@ function Cards() {
                             text="Find out how to contact me"
                             label="Contact"
                             path="/contact"
+                            boolLabel={true}
+                            externalLink={{}}
                         />
                         <CardItem
                             src={"/images/img-github.jpg"}
                             text="Inspect the source code of this website"
                             label="Code"
                             path="/"
-                            externalLink={{exists: true, link: "https://github.com/AlexOlivella/ReactCV"}}
+                            boolLabel={true}
+                            externalLink={{exists: true, link: "https://github.com/AlexOlivella/ReactCV/tree/main/cvreact"}}
                         />
                     </ul>
                 </div>

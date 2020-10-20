@@ -1,0 +1,80 @@
+.aboutMe {
+    display: flex;
+    height: fit-content;
+    min-height: 90vh;
+    font-size: 3rem;
+    background-image: url('/images/img-about-me-background.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -99;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+
+.imgContainer {
+    background-image: url('/images/img-me-small.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #e4e4e4;
+    padding: 150px;
+    border-radius: 10px;
+    display: flex;
+  }
+  .infoContainer {
+    background-color: #e4e4e4;
+    padding:30px;
+    border-radius: 10px;
+    display: flex;
+    font-size: 30px;
+    flex-direction: column;
+  }
+.text {
+    font-size: 1.5rem;
+}
+
+.imgContainer,
+.infoContainer {
+    margin: 0rem 4rem 1rem 4rem;
+}
+
+@media screen and (max-width: 1021px) and (min-width:500px){
+    .imgContainer {
+        background-image: url('/images/img-me-small.png');
+        background-size: cover;
+        background-position: center;
+        background-color: #e4e4e4;
+        padding: 200px 0;
+        border-radius: 10px;
+        display: flex;
+
+      }
+}
+
+@media screen and (max-width: 430px){
+    .imgContainer {
+        background-image: url('/images/img-me-small.png');
+        background-size: cover;
+        background-position: center;
+        background-color: #e4e4e4;
+        padding: 150px 0;
+        border-radius: 10px;
+        display: flex;
+
+      }
+}
+
+.education {
+    padding: 4rem;
+
+}
+.cards__container__small {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+}

@@ -50,6 +50,12 @@
     padding-top: 67%;
     overflow: hidden;
   }
+  .cards__item__pic-wrap-no-label {
+    position: relative;
+    width: 100%;
+    padding-top: 67%;
+    overflow: hidden;
+  }
   
   .fade-img {
     animation-name: fade-img;

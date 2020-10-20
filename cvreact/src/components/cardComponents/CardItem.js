@@ -12,13 +12,15 @@ function CardItem(props) {
                         window.open(props.externalLink.link)
                     }
                 }}>
-                    <figure className="cards__item__pic-wrap" data-category={props.label}>
+
+                    <figure className={props.boolLabel ? "cards__item__pic-wrap" : "cards__item__pic-wrap-no-label"} data-category={props.label}>
                         <img
                             src={props.src}
                             alt="Info"
                             className="cards__item__img"
                         />
                     </figure>
+
                     <div className="cards__item__info">
                         <h5 className="cards__item__text">
                             {props.text}
