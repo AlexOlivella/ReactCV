@@ -15,14 +15,16 @@ function Cards() {
                             boolLabel={true}
                             externalLink={{}}
                             path="/aboutMe"
+                            cardType = "Link"
                         />
                         <CardItem
                             src={"/images/img-work-eperience.jpg"}
-                            text="Check out my work experience"
+                            text="Check out my experience"
                             label="Work"
                             path="/workExperience"
                             boolLabel={true}
                             externalLink={{}}
+                            cardType = "Link"
                         />
                     </ul>
                     <ul className="cards__items">
@@ -33,6 +35,7 @@ function Cards() {
                             path="/contact"
                             boolLabel={true}
                             externalLink={{}}
+                            cardType = "Link"
                         />
                         <CardItem
                             src={"/images/img-github.jpg"}
@@ -40,6 +43,7 @@ function Cards() {
                             label="Code"
                             path="/"
                             boolLabel={true}
+                            cardType = "Link"
                             externalLink={{exists: true, link: "https://github.com/AlexOlivella/ReactCV/tree/main/cvreact"}}
                         />
                     </ul>

@@ -1,0 +1,148 @@
+
+
+.contactDiv,
+.titleContainer {
+    margin: 0rem 4rem 1rem 4rem;
+}
+
+.titleContactMe{
+    
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #000000;
+}
+.contactMethods{
+    display: flex;
+    flex-direction: column;
+}
+.contactDiv {
+    background-color: #e4e4e4;
+    padding:30px;
+    border-radius: 10px;
+    display: flex;
+    font-size: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.title,
+.text, 
+.linkText {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 10px;
+}
+.linkText:hover {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+.rowContact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: max-content;
+    margin-bottom: 10px;
+}
+
+.iconTitleDiv{
+    display: flex;
+    flex-direction: row;
+}
+.gmailIcon,
+.linkedinIcon,
+.phoneIcon
+{
+    background-size: cover;
+    background-position: center;
+    background-color: #e4e4e4;
+    padding: 18px;
+    border-radius: 10px;
+    display: flex;
+}
+.gmailIcon{
+    background-image: url('/images/img-gmail-icon.png');  
+}
+.linkedinIcon{
+    background-image: url('/images/img-linkedin-icon.png');  
+}
+.phoneIcon{
+    background-image: url('/images/img-phone-icon.png');  
+}
+
+@media only screen and (max-width: 1000px){
+    .contactDiv {
+        background-color: #e4e4e4;
+        padding:30px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+    }
+    .title{
+        display: none;
+    }
+    .text, .linkText {
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: #000000;
+        margin-left: 10px;
+    }
+    .titleContainer {
+        margin: 1rem 0rem
+    }
+}
+
+
+@media only screen and (max-width: 340px){
+    .contactDiv {
+        background-color: #e4e4e4;
+        padding:30px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+    }
+    
+    
+    .rowContact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+        width: max-content;
+        margin-bottom: 10px;
+    }
+    .contactMethods{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titleContainer {
+        margin: 1rem 0rem
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .text, .linkText {
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: #000000;
+        margin-left: 10px;
+        text-align: center;
+        width: 90%;
+    }
+    .titleContainer {
+        margin: 1rem 0rem
+    }
+    
+}

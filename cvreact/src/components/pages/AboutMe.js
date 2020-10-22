@@ -19,6 +19,9 @@ function AboutMe() {
                                 <span className="text"><b>Number:</b> 63</span>
                                 <span className="text"><b>City:</b> Sant Pere de Riudebitlles</span>
                                 <span className="text"><b>Zipcode:</b> 08776</span>
+                                <span className="text"><b>Province:</b> Barcelona</span>
+                                <span className="text"><b>Country:</b> Spain</span>
+
 
                             </div>
                         </ul>
@@ -38,7 +41,7 @@ function AboutMe() {
                                 boolLabel={false}
                                 path="/aboutMe"
                                 externalLink={{exists: true, link: "https://www.upc.edu/en/bachelors/informatics-engineering-barcelona-fib"}}
-
+                                cardType = "Link"
                             />
                         </ul>
                     </div>

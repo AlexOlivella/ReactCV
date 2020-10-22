@@ -31,7 +31,7 @@ function footer() {
           </div>
           <div className='footer-link-items'>
             <h2>Work experience</h2>
-            <Link to='/workExperience'>My experience</Link>
+            <Link to='/myExperience'>My experience</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>

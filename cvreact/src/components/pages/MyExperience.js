@@ -1,12 +1,12 @@
 import React  from 'react';
 import '../../App.css'
 
-export default function WorkExperience() {
+export default function MyExperience() {
 
     return (
 
         <h1 className="workExperience">
-            Work experience
+            My experience
         </h1>
 
 

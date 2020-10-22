@@ -40,7 +40,7 @@ export default function Header() {
 
                         </li>
                         <li className="nav-item">
-                            <Link to="/workExperience" className="nav-links" onClick={closeMobileMenu}>Work experience</Link>
+                            <Link to="/myExperience" className="nav-links" onClick={closeMobileMenu}>My experience</Link>
 
                         </li>
                         <li className="nav-item">

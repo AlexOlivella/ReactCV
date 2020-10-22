@@ -10,7 +10,7 @@ import Header from './components/headerComponent/Header'
 //import Footer from './components/footerComponent/footer'
 import Homepage from './components/pages/HomePage'
 import AboutMe from './components/pages/AboutMe';
-import WorkExperience from './components/pages/WorkExperience'
+import MyExperience from './components/pages/MyExperience'
 import Contact from './components/pages/Contact';
 import Reviews from './components/pages/Reviews';
 
@@ -32,7 +32,7 @@ export default class App extends Component {
           <Switch>
             <Route exact path="/" component={Homepage} />
             <Route exact path="/aboutMe" component={AboutMe} />
-            <Route exact path="/workExperience" component={WorkExperience} />
+            <Route exact path="/myExperience" component={MyExperience} />
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/reviews" component={Reviews} />
 
