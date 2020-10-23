@@ -1,0 +1,103 @@
+
+.myExperienceDiv,
+.titleDiv {
+    margin: 0rem 4rem 1rem 4rem;
+}
+.titleDiv {
+    text-align: center;
+}
+.rowJob{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: max-content;
+    margin-bottom: 10px;
+}
+
+.titleMyExperience{
+    
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+.myExperienceDiv {
+    background-color: #e4e4e4;
+    padding:30px;
+    border-radius: 10px;
+    display: flex;
+    font-size: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+    border: solid;
+    border-color: #000;
+}
+
+.OkifyIcon,
+.KowiIcon
+{
+    background-size: cover;
+    background-position: center;
+    background-color: #e4e4e4;
+    padding: 47px;
+    margin-right: 45px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.OkifyIcon{
+    background-image: url('/images/img-okify-icon.png');  
+}
+.KowiIcon{
+    background-image: url('/images/img-kowi-icon.png');  
+}
+
+.jobData{
+    display: flex;
+    flex-direction: column;
+}
+
+.jobPosition,
+.companyName{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.3rem;
+}
+
+.jobPosition {
+    font-weight: bold;
+}
+
+.dates {
+    text-decoration: none;
+    color: #494848;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 450px){
+    .rowJob {
+        flex-direction: column;
+    }
+    .OkifyIcon, .KowiIcon {
+        margin-right:0;
+        margin-bottom: 5px;
+        margin-top:10px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .titleDiv {
+        margin: 0rem;
+    }
+    .jobPosition,
+    .companyName{
+        font-size:1.1rem;
+    }
+    .dates {
+        
+        font-size:0.9rem;
+    }
+}

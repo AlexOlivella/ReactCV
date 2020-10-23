@@ -1,0 +1,43 @@
+
+  .cards__item {
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+  }
+  
+.cards__video__wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .videoPlay {
+
+    object-fit: cover;
+    width: 50%;
+    z-index: 0;
+    position: unset;
+  }
+
+.video_container{
+    display: flex;
+    padding: 1rem;
+    
+    justify-content: center;
+}
+  .cards__video__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  .cards__video__info{
+      
+    padding: 20px 30px 30px;
+  }

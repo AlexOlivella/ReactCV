@@ -6,7 +6,7 @@
 }
 
 .home,
-.workExperience,
+.myExperience,
 .contact,
 .reviews {
   display: flex;
@@ -17,8 +17,8 @@
 }
 
 
-.workExperience {
-  background-image: url('/images/img-1.jpg');
+.myExperience {
+  background-image: url('/images/img-9.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
