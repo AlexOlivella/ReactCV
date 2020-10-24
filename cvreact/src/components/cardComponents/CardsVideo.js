@@ -1,10 +1,10 @@
 import React from 'react'
-
 import CardVideo from './CardVideo'
 import './Cards.css'
+
 function CardsVideo() {
     return (
-        <div className="cards">
+        <div className="cardsVideo">
             <h1>Check this demonstrations!</h1>
             <div className="cards__container">
                 <div className="cards__wrapper">
@@ -24,7 +24,7 @@ function CardsVideo() {
                             text="Mygraine"
                         />
                         <CardVideo
-                            src={"/videos/video-mygraine.mp4"}
+                            src={"/videos/video-teahelp.mp4"}
                             text="Teahelp"
                         />
                     </ul>

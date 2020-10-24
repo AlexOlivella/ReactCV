@@ -1,9 +1,16 @@
 
+  .cardsVideo {
+    
+      padding: 4rem;
+      background: #e4e4e4;
+    
+  }
   .cards__item {
     display: flex;
     flex: 1;
     margin: 0 1rem;
     border-radius: 10px;
+    background: #ffffff;
   }
   
 .cards__video__wrap {
@@ -13,7 +20,7 @@
   }
 
   .videoPlay {
-
+    cursor: pointer;
     object-fit: cover;
     width: 50%;
     z-index: 0;
@@ -23,7 +30,7 @@
 .video_container{
     display: flex;
     padding: 1rem;
-    
+    background: #242424;
     justify-content: center;
 }
   .cards__video__container {
@@ -40,4 +47,16 @@
   .cards__video__info{
       
     padding: 20px 30px 30px;
+  }
+
+
+  @media only screen and (max-width: 1015px){
+    .cards__item {
+      display: flex;
+      flex: 1;
+      margin: 0 1rem;
+      margin-bottom: 50px;
+      border-radius: 10px;
+      background: #ffffff;
+    }
   }
