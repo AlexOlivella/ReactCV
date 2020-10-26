@@ -21,8 +21,6 @@
     overflow: hidden;
   }
 
-
-
   .cards__video__container {
     display: flex;
     flex-flow: column;

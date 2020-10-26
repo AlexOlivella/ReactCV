@@ -1,0 +1,104 @@
+
+.writeReviews{
+    
+    padding-top: 15%;
+    display: flex;
+    min-height: 90vh;
+    height: fit-content;
+    align-items: center;
+    font-size: 3rem;
+    flex-direction: column;
+    background-image: url("/images/img-10.jpeg"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+  
+.titleReview{
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 0 0#000000;
+}
+.formReview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputReview{
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px
+}
+.inputReview:focus{
+    outline: none;
+}
+.reactStars{
+    margin-bottom: 10px;
+}
+.reactStars:focus{
+    outline: none;
+}
+.rowInput{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+.textArea{
+    
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 10px;
+    height: 15vh;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    
+    width: 450px;
+    resize: none;
+}
+.textArea:focus {
+    outline: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .titleReview{
+        font-size: 2rem;
+        color: #fff;
+        text-shadow: 2px 0 0#000000;
+        background-color: #242424;
+        padding:10px;
+    }
+
+}
+@media only screen and (max-width: 460px) {
+      
+    
+    .inputReview{
+        margin-left: 0px;
+    }
+    .rowInput{
+        flex-direction: column;
+    }
+    .inputReview{
+        font-size: 0.9rem;
+    }
+    .textArea{
+        width: 195px;
+        margin-left: 0;
+    }
+}
+
+.buttonPublish {
+    
+
+    background-color: var(--primary);
+    color: #242424;
+    border: 1px solid var(--primary);
+
+}

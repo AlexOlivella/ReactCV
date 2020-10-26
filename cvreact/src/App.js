@@ -13,6 +13,7 @@ import AboutMe from './components/pages/AboutMe';
 import MyExperience from './components/pages/MyExperience'
 import Contact from './components/pages/Contact';
 import Reviews from './components/pages/Reviews';
+import WriteReview from './components/pages/WriteReview';
 
 //includes
 import './App.css'
@@ -35,7 +36,7 @@ export default class App extends Component {
             <Route exact path="/myExperience" component={MyExperience} />
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/reviews" component={Reviews} />
-
+            <Route exact path="/writeReview" component={WriteReview} />
           </Switch>
         </Router>
       </>
