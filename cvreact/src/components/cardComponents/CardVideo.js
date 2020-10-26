@@ -1,24 +1,36 @@
 import React from 'react'
 import './CardsVideo.css'
+import VideoPlayer from '../videoPlayer/VideoPlayer'
 
 function CardVideo(props) {
+
+
+    // let stats = true
+    // function playPause(ev){
+    //     if(stats){
+    //         ev.target.play()
+    //         stats = false
+    //     }
+    //     else {
+    //         ev.target.pause()
+    //         stats = true
+    //     }
+    //     console.log(stats)
+    // }
+
+
 
 
     return (
         <>
             <li className="cards__item">
-                <div className="cards__video__container">
-                    <div className="video_container">
-                        <video
-                            className="videoPlay"
-                            onMouseOver={event => event.target.play()}
-                            onMouseOut={event => event.target.load()}
-                            src={props.src}
-                            crossOrigin="anonymous"
-                            loop
-                            muted
-                        />
-                    </div>
+                <div className="cards__video__container" >
+
+                    <VideoPlayer src={props.src}></VideoPlayer>
+
+
+
+
                     <div className="cards__video__info">
                         <h5 className="cards__item__text">
                             {props.text}
@@ -27,6 +39,7 @@ function CardVideo(props) {
 
 
                 </div>
+
 
             </li>
         </>

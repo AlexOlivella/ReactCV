@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "font-awesome": "^4.7.0",
-    "react-pro-sidebar": "^0.4.4"
-  }
-}

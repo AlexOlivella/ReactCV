@@ -1,0 +1,38 @@
+
+  .videoPlay {
+    object-fit: contain;
+    z-index: 0;
+    position: unset;
+    cursor: pointer;
+    padding:1rem 0rem;
+  }
+
+  .video-container{
+    display: flex;
+    padding: 1rem;
+    background: #242424;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.control-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bar-buttons{
+    color: #e4e4e4;
+    cursor: pointer;
+    display: flex !important;
+    margin: 0rem 0.2rem 1rem 0.2rem ;
+    
+}
+
+video::-webkit-media-controls-volume-slider {
+    display:none;
+}
+
+video::-webkit-media-controls-mute-button {
+    display:none;
+}

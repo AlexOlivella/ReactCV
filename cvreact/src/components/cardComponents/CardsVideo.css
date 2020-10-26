@@ -1,13 +1,15 @@
 
   .cardsVideo {
     
-      padding: 4rem;
-      background: #e4e4e4;
+    padding: 4rem;
+    background: #e4e4e4;
     
   }
   .cards__item {
     display: flex;
     flex: 1;
+    
+    width: 100%;
     margin: 0 1rem;
     border-radius: 10px;
     background: #ffffff;
@@ -19,20 +21,8 @@
     overflow: hidden;
   }
 
-  .videoPlay {
-    cursor: pointer;
-    object-fit: cover;
-    width: 50%;
-    z-index: 0;
-    position: unset;
-  }
 
-.video_container{
-    display: flex;
-    padding: 1rem;
-    background: #242424;
-    justify-content: center;
-}
+
   .cards__video__container {
     display: flex;
     flex-flow: column;
