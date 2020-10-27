@@ -10,8 +10,9 @@ function CardsVideo() {
                 <div className="cards__wrapper">
                     <ul className="cards__items">
                         <CardVideo
-                            src={"/videos/video-mygraine.mp4"}
+                            src={"/videos/video-okify.mp4"}
                             text="Okify"
+                            type="horizontal"
                         />
                         <CardVideo
                             src={"/videos/video-kowi.mp4"}

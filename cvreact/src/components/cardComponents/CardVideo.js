@@ -7,7 +7,7 @@ function CardVideo(props) {
         <>
             <li className="cards__item">
                 <div className="cards__video__container" >
-                    <VideoPlayer src={props.src}></VideoPlayer>
+                    <VideoPlayer src={props.src} type={props.type}></VideoPlayer>
                     <div className="cards__video__info">
                         <h5 className="cards__item__text">
                             {props.text}

@@ -45,7 +45,8 @@ export default class VideoPlayer extends Component {
             <div className="video-container">
                 <video
                     ref={(ref) => this.video = ref}
-                    className="videoPlay"
+                    
+                    className={this.props.type !== "horizontal" ? "videoPlay" : "videoPlayHorizontal"}
                     src={this.props.src}
                     crossOrigin="anonymous"
                     muted
