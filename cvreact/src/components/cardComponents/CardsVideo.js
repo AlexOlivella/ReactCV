@@ -14,7 +14,7 @@ function CardsVideo() {
                             text="Okify"
                         />
                         <CardVideo
-                            src={"/videos/video-mygraine.mp4"}
+                            src={"/videos/video-kowi.mp4"}
                             text="Kowi"
                         />
                     </ul>

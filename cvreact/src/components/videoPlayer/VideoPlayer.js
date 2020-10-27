@@ -45,29 +45,14 @@ export default class VideoPlayer extends Component {
             <div className="video-container">
                 <video
                     ref={(ref) => this.video = ref}
-
                     className="videoPlay"
                     src={this.props.src}
                     crossOrigin="anonymous"
-                    loop
                     muted
                     controls
                     disablePictureInPicture
                     controlsList="nodownload"
-                     
-
                 />
-
-                {/* <div className="control-bar">
-                    {this.state.videoState ?
-                        <i className="fa fa-play bar-buttons" aria-hidden="true" onClick={() => this.playVideo()}></i> 
-                        :
-
-                        <i className="fa fa-pause bar-buttons" aria-hidden="true" onClick={() => this.pauseVideo()}></i>
-                        }
-                    <i className="fa fa-arrows-alt bar-buttons" aria-hidden="true" onClick={() => this.fullScreen()}></i>
-
-                </div> */}
             </div>
         )
     }

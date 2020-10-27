@@ -5,6 +5,7 @@
     position: unset;
     cursor: pointer;
     padding:1rem 0rem;
+    width: 50%;
   }
 
   .video-container{
@@ -13,6 +14,7 @@
     background: #242424;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .control-bar {
