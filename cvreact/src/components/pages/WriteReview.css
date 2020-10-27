@@ -8,7 +8,7 @@
     align-items: center;
     font-size: 3rem;
     flex-direction: column;
-    background-image: url("/images/img-10.jpeg"); 
+    background-image: url("/images/img-3.jpeg"); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -48,7 +48,10 @@
     display: flex;
     justify-content: center;
 }
-
+.buttonPublish{
+    margin-bottom: 30px;
+    max-width: 100px;
+}
 .textArea{
     
     font-size: 1rem;
@@ -74,10 +77,17 @@
         background-color: #242424;
         padding:10px;
     }
+    
 
 }
+
+@media only screen and (max-width:1000px) and (min-width: 460px){
+    
+}
 @media only screen and (max-width: 460px) {
-      
+    .buttonPublish{
+        margin-bottom: 30px;
+    }
     
     .inputReview{
         margin-left: 0px;

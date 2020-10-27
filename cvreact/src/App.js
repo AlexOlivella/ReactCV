@@ -7,7 +7,6 @@ import {
 
 //components
 import Header from './components/headerComponent/Header'
-//import Footer from './components/footerComponent/footer'
 import Homepage from './components/pages/HomePage'
 import AboutMe from './components/pages/AboutMe';
 import MyExperience from './components/pages/MyExperience'
@@ -20,10 +19,6 @@ import './App.css'
 
 
 export default class App extends Component {
-
-  componentDidUpdate() {
-
-  }
 
   render() {
     return (

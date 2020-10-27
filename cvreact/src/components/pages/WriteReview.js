@@ -28,7 +28,7 @@ export default class WriteReview extends Component {
             this.state.name,
             this.state.lastName,
             this.state.company,
-            this.state.company,
+            this.state.position,
             this.state.review,
             this.state.ratioValue
         )

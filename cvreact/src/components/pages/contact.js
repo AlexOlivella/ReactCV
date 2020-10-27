@@ -37,7 +37,7 @@ export default function Contact() {
                                 <div className="phoneIcon"></div>
                                 <span className="title"><b>Phone:</b></span>
                             </div>
-                            <span className="text">633873567</span>
+                            <span className="text">+34 633873567</span>
                         </div>
                     </div>
                 </div>

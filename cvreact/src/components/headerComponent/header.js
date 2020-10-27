@@ -44,6 +44,10 @@ export default function Header() {
 
                         </li>
                         <li className="nav-item">
+                            <Link to="/reviews" className="nav-links" onClick={closeMobileMenu}>My reviews</Link>
+
+                        </li>
+                        <li className="nav-item">
                             <Link to="/contact" className="nav-links-mobile" onClick={closeMobileMenu}>Contact</Link>
 
                         </li>

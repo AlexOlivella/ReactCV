@@ -1,16 +1,50 @@
-import React from 'react'
+import React, { Component } from 'react'
+import * as firebaseFunctions from '../../firebaseAPI/firebaseAPI'
+import './Reviews.css'
+import ReviewCard from '../cardComponents/ReviewCard';
+
+export default class Reviews extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            reviews: []
 
 
+        }
+    }
 
-function Reviews() {
-    return (
-        <>
+    componentDidMount() {
+        this.getData()
+    }
 
-            <h1 className="reviews">
-                Reviews
-        </h1>
-        </>
-    )
+    async getData() {
+        let data = await firebaseFunctions.getReviews()
+        this.setState({ reviews: data })
+    }
+
+    render() {
+        return (
+            <>
+                <div className="review--container">
+                    <ul className="review--list">
+                        {this.state.reviews.map((value, index) => {
+                            return (
+                                <ReviewCard
+                                    key={index}
+                                    name={value.name}
+                                    lastName={value.lastName}
+                                    company={value.company}
+                                    position={value.position}
+                                    ratio={value.ratio}
+                                    reviewDescription={value.review}
+                                />
+                            )
+                        })}
+
+                    </ul>
+                </div>
+            </>
+        )
+    }
 }
-
-export default Reviews

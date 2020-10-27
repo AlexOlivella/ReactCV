@@ -1,0 +1,82 @@
+.review--container{
+    display: flex;
+    height: fit-content;
+    min-height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+    background-image: url('/images/img-5.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.review--list {
+    display: grid;
+    flex-wrap: wrap;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+
+}
+
+.review--card{
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    height: fit-content;
+
+}
+
+.review--text--name{
+    color: #000;
+    font-size: 1.2rem;
+
+}
+.review--text--company{
+
+    color: rgb(102, 99, 99);
+    font-size: 0.9rem;
+}
+
+.review--text--description{
+
+    color: #000;
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width:1200px) and (min-width:768px) {
+    
+    
+    
+}
+
+@media only screen and (max-width:768px) {
+    
+    .review--list {
+        justify-content: center;
+    }
+    
+}
+
+@media only screen and (max-width: 360px) {
+    
+    .review--text--name{
+        color: #000;
+        font-size: 1rem;
+
+    }
+    .review--text--company{
+
+        color: rgb(102, 99, 99);
+        font-size: 0.7rem;
+    }
+
+    .review--text--description{
+
+        color: #000;
+        font-size: 0.6rem;
+    }
+}

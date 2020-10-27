@@ -21,3 +21,14 @@ export async function publishReview(name, lastName, company, position, review, r
         });
 
 }
+
+export async function getReviews(){
+    let result = []
+    await db.collection("reviews").get().then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+            result.push(doc.data())
+        });
+    });
+
+    return result
+}
