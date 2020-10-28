@@ -45,3 +45,11 @@ video::-webkit-media-controls-volume-slider {
 video::-webkit-media-controls-mute-button {
     display:none;
 }
+
+@media only screen and (max-width: 767px){
+  .videoPlay {
+    
+    width: 100%;
+  }
+
+}

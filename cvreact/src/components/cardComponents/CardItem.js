@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 function CardItem(props) {
 
@@ -7,7 +6,7 @@ function CardItem(props) {
         <>
             <li className="cards__item">
                 {props.cardType === "Link" ?
-                    <Link className="cards__item__link" to={props.path} onClick={() => {
+                    <a className="cards__item__link" href={props.path} onClick={() => {
                         if (props.externalLink.exists) {
                             window.open(props.externalLink.link)
                         }
@@ -26,7 +25,7 @@ function CardItem(props) {
                                 {props.text}
                             </h5>
                         </div>
-                    </Link>
+                    </a>
                     :
                     <div>
                     </div>}

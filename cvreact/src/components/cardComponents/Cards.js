@@ -21,7 +21,7 @@ function Cards() {
                             src={"/images/img-work-eperience.jpg"}
                             text="Check out my experience"
                             label="Work"
-                            path="/workExperience"
+                            path="/myExperience"
                             boolLabel={true}
                             externalLink={{}}
                             cardType = "Link"
