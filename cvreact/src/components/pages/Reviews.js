@@ -28,7 +28,7 @@ export default class Reviews extends Component {
             <>
                 <div className="review--container">
                     <ul className="review--list">
-                        {this.state.reviews.map((value, index) => {
+                        {this.state.reviews.length > 0 ? this.state.reviews.map((value, index) => {
                             return (
                                 <ReviewCard
                                     key={index}
@@ -40,7 +40,8 @@ export default class Reviews extends Component {
                                     reviewDescription={value.review}
                                 />
                             )
-                        })}
+                        }):
+                        <h1 className="noReviews">There are no reviews yet</h1>}
 
                     </ul>
                 </div>
