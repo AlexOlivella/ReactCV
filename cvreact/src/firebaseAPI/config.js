@@ -1,15 +1,15 @@
 import * as firebase from 'firebase/app'
 import 'firebase/firebase-firestore';
 
-
+console.log(process.env)
 var firebaseConfig = {
-    apiKey: "AIzaSyDp8xxssWH10qKD2UZAwcftU4JSnrues3Y",
-    authDomain: "cvreact-cc906.firebaseapp.com",
-    databaseURL: "https://cvreact-cc906.firebaseio.com",
-    projectId: "cvreact-cc906",
-    storageBucket: "cvreact-cc906.appspot.com",
-    messagingSenderId: "123506321688",
-    appId: "1:123506321688:web:a047d7cb9c032ddcae966d"
+    apiKey: process.env.REACT_APP_APIKEY,
+    authDomain: process.env.REACT_APP_AUTHDOMAIN,
+    databaseURL: process.env.REACT_APP_DATABASEURL,
+    projectId: process.env.REACT_APP_PROJECTID,
+    storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+    appId: process.env.REACT_APP_APP_ID
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

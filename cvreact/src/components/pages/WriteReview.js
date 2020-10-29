@@ -50,7 +50,7 @@ export default class WriteReview extends Component {
         return (
             <>
                 <div className="writeReviews">
-                    <h1 className="titleReview">Thank you for dedicate your time to write a review of me</h1>
+                    <h1 className="titleReview">Thank you for dedicating your time to write a review of me</h1>
                     <form className="formReview">
                         <div className="rowInput">
                             <input className="inputReview" value={this.state.name} placeholder="Name" name="name" onChange={this.handleChange} />
